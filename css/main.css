@@ -1403,7 +1403,7 @@ footer h5 {
     }
 
     .container3 nav ul {
-        margin-left: 675px;
+        margin-left: 45%;
     }
 
 }
@@ -1738,9 +1738,9 @@ footer h5 {
         display: none;
     }
 
-    .container3 nav ul {
+/*    .container3 nav ul {
         margin-left: 200px;
-    }
+    }*/
 
 
 }
@@ -1839,9 +1839,9 @@ footer h5 {
         margin-right: 5%;
     }
 
-    .container3 nav ul {
+/*    .container3 nav ul {
         margin-left: 325px;
-    }
+    }*/
 
 
 }
@@ -1939,9 +1939,9 @@ footer h5 {
         margin-right: 5%;
     }
 
-    .container3 nav ul {
+/*    .container3 nav ul {
         margin-left: 150px;
-    }
+    }*/
 
 @media only screen and (max-width: 400px) {
     html { font-size: 1em; }
@@ -2090,6 +2090,6 @@ footer h5 {
         margin-right: 5%;
     }
 
-    .container3 nav ul {
+/*    .container3 nav ul {
         margin-left: 100px;
-    }
+    }*/
