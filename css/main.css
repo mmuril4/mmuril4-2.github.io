@@ -1,0 +1,2103 @@
+/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * C#D40A1Ait left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+ ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+/* hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    }*/
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+ audio,
+ canvas,
+ iframe,
+ img,
+ svg,
+ video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+ fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+ textarea {
+    resize: vertical;
+}
+
+@font-face{ 
+    font-family: 'Molot';
+    src: url('Molot-webfont.eot');
+    src: url('Molot-webfont.eot?iefix') format('eot'),
+    url('Molot-webfont.woff') format('woff'),
+    url('Molot-webfont.ttf') format('truetype'),
+    url('Molot-webfont.svg#webfont') format('svg');
+}
+
+
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+   .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   body {
+    font-family: sans-serif;
+}
+
+nav {
+  float: right;
+  text-align: right;
+}
+
+nav li {
+  float: left;
+  text-align: center;
+  list-style: none;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 20px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: #D40A1A;
+}
+
+.hamburger {
+  display: none;
+  float: right;
+  cursor: pointer;
+}
+
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto 10px;
+}
+
+form input, form textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: 'Merriweather', sans-serif;
+  resize: none;
+}
+
+form input[type="submit"] {
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+form textarea {
+  height: 188px;
+}
+
+.column {
+  float: left;
+  width: 42%;
+  margin-bottom: 1em;
+}
+
+.column:first-of-type {
+  margin-right: 10%;
+}
+
+.modal h3 {
+    font-family: "Molot", sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 2.250em;
+    letter-spacing: 1px;
+}
+
+.modal {
+  color: black;
+  background-color: #C11516;
+  padding: 40px 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  max-width: 900px;
+  min-width: 320px;
+  height: auto;
+  z-index: 3000;
+  visibility: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.show-modal {
+  visibility: visible;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  overflow: hidden;
+}
+
+.overlay-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.show-modal ~ .overlay-background {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  visibility: visible;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.1);  
+    margin-top: 0px;
+    z-index: 5;
+}
+
+.header img {
+    opacity: 0.5;
+    float: left;
+}
+
+.headercontainer {
+    margin-top: 50px;
+}
+
+h1 {
+    font-family: "Molot", sans-serif;
+    margin: 0px;
+    font-size: 8.750em;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    color: white;
+    padding-left: 100px;
+    text-transform: uppercase;
+    z-index: 50;
+}
+
+.containerimage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    z-index: -50;
+}
+
+video#bgvid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    z-index: -100;
+    width: auto;
+    height: auto;
+}
+
+/****** R O S T E R   S E C T I O N ******/
+
+.container2 {
+  margin: 0px auto;
+  font-family: 'Open Sans', sans-serif;
+  background-size: 100%;
+  position: relative;
+  top: 0px;
+  height: 100%;
+  max-width: 125%;
+  overflow: hidden;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.containerimage2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    z-index: -50;
+}
+
+/****** C H A M P I O N S  S E C T I O N ******/
+
+.champions {
+    max-width: 100%;
+    height: 300px;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.worldchampioncontainer {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: 50px;
+    width: 540px;
+    height: 270px;
+    background-color: #C11516;
+    box-shadow: 0px 0px 3px black;
+    overflow: hidden;
+}
+
+.worldchampionbgimg img {
+    display: inline-block;
+    float: left;
+    width: 96.5%;
+    height: 250px;
+    background-color: ;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.worldchampion img {
+    position: absolute;
+    display: inline-block;
+    float: left;
+    width: 140px;
+    height: 300px;
+    left: 20px;
+    top: 5px;
+}
+
+.worldchampion {
+    display: inline-block;
+    float: left;
+    background-color: white;
+    border-right: 1px solid #D40A1A;
+    box-shadow: 0px 0px 5px black;
+    overflow: hidden;
+}
+
+.worldchampioncontainer h3 {
+    position: absolute;
+    color: white;
+    font-size: 2.625em;
+    font-weight: bold;
+    left: 185px;
+    top: 90px;
+    margin: 0px;
+}
+
+.worldchampioncontainer h4 {
+    position: absolute;
+    color: white;
+    font-size: 1.125em;
+    font-weight: bold;
+    left: 298px;
+    top: 75px;
+    text-transform: uppercase;
+    text-align: right;
+    margin: 0px;
+}
+
+.worldchampioninfo {
+    position: absolute;
+    left: 300px;
+    top: 150px;
+    color: white;
+    display: inline-block;
+    text-shadow: 2px 0px 2px black;
+}
+
+.worldchampioninfo p {
+    margin: 0 auto;
+}
+
+.tagteamcontainer {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 540px;
+    height: 270px;
+    background-color: #C11516;
+    box-shadow: 0px 0px 3px black;
+    overflow: hidden;
+}
+
+.tagteamtitle h3 {
+    position: absolute;
+    color: white;
+    font-size: 2.000em;
+    font-weight: bold;
+    left: 23px;
+    top: 95px;
+    margin: 0px;
+    z-index: 1;
+    text-shadow: 2px 0px 2px black;
+}
+
+.tagteamcontainer h4 {
+    float: left;
+    position: absolute;
+    font-size: 1.125em;
+    top: 75px;
+    left: 23px;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 0px 2px black;
+}
+
+.tagteaminfoAE  {
+    position: absolute;
+    top: 150px;
+    left: 23px;
+    color: white;
+    margin: 0;
+    text-shadow: 2px 0px 2px black;
+}
+
+.tagteaminfoAE p {
+    margin: 0 auto;
+}
+
+.tagteaminfoTL p {
+    margin: 0 auto;
+}
+
+.stat {
+    display: inline-block;
+    width: 100px;
+    font-size: 0.750em;
+}
+
+.detail {
+    display: inline-block;
+    width: 135px;
+    font-size: 0.750em;
+}
+
+.tagteaminfoTL  {
+    position: absolute;
+    top: 150px;
+    left: 275px;
+    color: white;
+    margin: 0;
+    z-index: 1;
+    text-shadow: 2px 0px 2px black;
+}
+
+.tagteamchampionbgimg {
+    z-index: -2;
+}
+
+.tagteamchampionbgimg img {
+    display: inline-block;
+    float: left;
+    width: 520px;
+    height: 250px;
+    background-color: #D40A1A;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.tagteamchampions img {
+    position: absolute;
+    display: inline-block;
+    width: 230px;
+    height: 300px;
+    right: 0px;
+    top: 5px;
+    z-index: 0;
+}
+
+#champ2 {
+    right: 125px;
+    width: 200px;
+}
+
+/****** R O S T E R  I M A G E S / R O W 1 ******/
+
+.rostercontainer_row1 {
+    float: left;
+    margin-top: 50px;
+    margin-left: 150px;
+    display: inline-block;
+    width: 100%;
+    height: 150px;
+}
+
+.rostercontainer_row1 p {
+    line-height: 1.25;
+    margin-bottom: 10px;
+}
+
+
+/****** I M A G E 1 ******/
+
+.rosterimage1 {
+    float: left;
+}
+
+.rostercolorimage1 {
+    position: absolute;
+    opacity: 0;
+}
+
+.row1image1text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 250px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: .750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage1:hover,
+.rostercolorimage1:hover ~ .row1image1text {
+    opacity: .9;
+    transition: all 0.9s ease;
+}
+
+/****** I M A G E 2 ******/
+
+.rosterimage2 {
+    float: left;
+}
+
+.rostercolorimage2 {
+    position: absolute;
+    left: 250px;
+    opacity: 0;
+}
+
+.row1image2text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 350px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage2:hover,
+.rostercolorimage2:hover ~ .row1image2text {
+    opacity: .9;
+    transition: all 0.9s ease;
+}
+
+/****** I M A G E 3 ******/
+
+.rosterimage3 {
+    float: left;
+}
+
+.rostercolorimage3 {
+    position: absolute;
+    left: 350px;
+    opacity: 0;
+}
+
+.row1image3text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 450px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage3:hover,
+.rostercolorimage3:hover ~ .row1image3text {
+    opacity: .9;
+    transition: all 0.9s ease;
+}
+
+/****** I M A G E 4 ******/
+
+.rosterimage4 {
+    float: left;
+}
+
+.rostercolorimage4 {
+    position: absolute;
+    left: 450px;
+    opacity: 0;
+}
+
+.row1image4text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 550px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage4:hover,
+.rostercolorimage4:hover ~ .row1image4text {
+    opacity: .9;
+    transition: all 0.9s ease;
+}
+
+/****** I M A G E 5 ******/
+
+.rosterimage5 {
+    float: left;
+}
+
+.rostercolorimage5 {
+    position: absolute;
+    left: 550px;
+    opacity: 0;
+}
+
+.row1image5text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 650px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage5:hover,
+.rostercolorimage5:hover ~ .row1image5text {
+    opacity: .9;
+    transition: all 0.9s ease;
+}
+
+/****** I M A G E 6 ******/
+
+.rosterimage6 {
+    float: left;
+}
+
+.rostercolorimage6 {
+    position: absolute;
+    left: 650px;
+    opacity: 0;
+}
+
+.row1image6text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 750px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage6:hover,
+.rostercolorimage6:hover ~ .row1image6text {
+    opacity: .9;
+    transition: all 0.9s ease;
+}
+
+/****** I M A G E 7 ******/
+
+.rosterimage7 {
+    float: left;
+}
+
+.rostercolorimage7 {
+    position: absolute;
+    left: 750px;
+    opacity: 0;
+}
+
+.row1image7text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 850px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage7:hover,
+.rostercolorimage7:hover ~ .row1image7text {
+    opacity: .9;
+    transition: all 0.9s ease;
+}
+
+/****** I M A G E 8 ******/
+
+.rosterimage8 {
+    float: left;
+}
+
+.rostercolorimage8 {
+    position: absolute;
+    left: 850px;
+    opacity: 0;
+    z-index: 1;
+}
+
+.row1image8text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 950px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage8:hover,
+.rostercolorimage8:hover ~ .row1image8text {
+    opacity: .9;
+    transition: all 0.9s ease;
+}
+
+/****** I M A G E 9 ******/
+
+.rosterimage9 {
+    float: left;
+}
+
+.rostercolorimage9 {
+    position: absolute;
+    left: 950px;
+    opacity: 0;
+    z-index: 1;
+}
+
+.row1image9text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 1050px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage9:hover,
+.rostercolorimage9:hover ~ .row1image9text {
+    opacity: .9;
+    transition: all 0.9s ease;
+}
+
+/****** I M A G E 10 ******/
+
+.rosterimage10 {
+    float: left;
+}
+
+.rostercolorimage10 {
+    position: absolute;
+    left: 1050px;
+    opacity: 0;
+    z-index: 1;
+}
+
+.row1image10text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 850px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage10:hover,
+.rostercolorimage10:hover ~ .row1image10text {
+    opacity: .9;
+    transition: all 0.9s ease;
+}
+
+/****** I M A G E 11 ******/
+
+.rosterimage11 {
+    float: left;
+}
+
+.rostercolorimage11 {
+    position: absolute;
+    left: 1150px;
+    opacity: 0;
+}
+
+.row1image11text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 950px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage11:hover,
+.rostercolorimage11:hover ~ .row1image11text {
+    opacity: .9;
+    transition: all 0.9s ease;
+}
+
+/****** R O S T E R  I M A G E S / R O W 2 ******/
+
+.rostercontainer_row2 {
+    float: left;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    display: inline-block;
+    /*        background-color: blue;*/
+    width: 100%;
+    height: 150px;
+}
+
+.rostercontainer_row2 p {
+    line-height: 1.25;
+    margin-bottom: 10px;
+}
+
+/****** I M A G E 12 ******/
+
+.rosterimage12 {
+    float: left;
+}
+
+.rostercolorimage12 {
+    position: absolute;
+    opacity: 0;
+}
+
+.row2image12text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 250px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage12:hover,
+.rostercolorimage12:hover ~ .row2image12text {
+    opacity: .9;
+    transition: all 0.9s ease;
+}
+
+/****** I M A G E 13 ******/
+
+.rosterimage13 {
+    float: left;
+}
+
+.rostercolorimage13 {
+    position: absolute;
+    left: 250px;
+    opacity: 0;
+}
+
+.row2image13text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 350px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage13:hover,
+.rostercolorimage13:hover ~ .row2image13text {
+    opacity: .9;
+    transition: all 0.9s ease;
+}
+
+/****** I M A G E 14 ******/
+
+.rosterimage14 {
+    float: left;
+}
+
+.rostercolorimage14 {
+    position: absolute;
+    left: 350px;
+    opacity: 0;
+}
+
+.row2image14text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 450px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage14:hover,
+.rostercolorimage14:hover ~ .row2image14text {
+    opacity: .9;
+    transition: all 0.9s ease;
+}
+
+/****** I M A G E 15 ******/
+
+.rosterimage15 {
+    float: left;
+}
+
+.rostercolorimage15 {
+    position: absolute;
+    left: 450px;
+    opacity: 0;
+}
+
+.row2image15text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 550px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage15:hover,
+.rostercolorimage15:hover ~ .row2image15text {
+    opacity: .9;
+    transition: all 0.9s ease;
+}
+
+/****** I M A G E 16 ******/
+
+.rosterimage16 {
+    float: left;
+}
+
+.rostercolorimage16 {
+    position: absolute;
+    left: 550px;
+    opacity: 0;
+}
+
+.row2image16text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 650px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage16:hover,
+.rostercolorimage16:hover ~ .row2image16text {
+    opacity: .9;
+    transition: all 0.9s ease;
+} 
+
+/****** I M A G E 17 ******/
+
+.rosterimage17 {
+    float: left;
+}
+
+.rostercolorimage17 {
+    position: absolute;
+    left: 650px;
+    opacity: 0;
+}
+
+.row2image17text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 750px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage17:hover,
+.rostercolorimage17:hover ~ .row2image17text {
+    opacity: .9;
+    transition: all 0.9s ease;
+} 
+
+/****** I M A G E 18 ******/
+
+.rosterimage18 {
+    float: left;
+}
+
+.rostercolorimage18 {
+    position: absolute;
+    left: 750px;
+    opacity: 0;
+}
+
+.row2image18text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 850px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage18:hover,
+.rostercolorimage18:hover ~ .row2image18text {
+    opacity: .9;
+    transition: all 0.9s ease;
+} 
+
+/****** I M A G E 19 ******/
+
+.rosterimage19 {
+    float: left;
+}
+
+.rostercolorimage19 {
+    position: absolute;
+    left: 850px;
+    opacity: 0;
+    z-index: 1;
+}
+
+.row2image19text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 950px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage19:hover,
+.rostercolorimage19:hover ~ .row2image19text {
+    opacity: .9;
+    transition: all 0.9s ease;
+} 
+
+/****** I M A G E 20 ******/
+
+.rosterimage20 {
+    float: left;
+}
+
+.rostercolorimage20 {
+    position: absolute;
+    left: 950px;
+    opacity: 0;
+    z-index: 1;
+}
+
+.row2image20text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 1050px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage20:hover,
+.rostercolorimage20:hover ~ .row2image20text {
+    opacity: .9;
+    transition: all 0.9s ease;
+} 
+
+/****** I M A G E 21 ******/
+
+.rosterimage21 {
+    float: left;
+}
+
+.rostercolorimage21 {
+    position: absolute;
+    left: 1050px;
+    opacity: 0;
+    z-index: 1;
+}
+
+.row2image21text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 850px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage21:hover,
+.rostercolorimage21:hover ~ .row2image21text {
+    opacity: .9;
+    transition: all 0.9s ease;
+} 
+
+/****** I M A G E 22 ******/
+
+.rosterimage22 {
+    float: left;
+}
+
+.rostercolorimage22 {
+    position: absolute;
+    left: 1150px;
+    opacity: 0;
+}
+
+.row2image22text {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 950px;
+    opacity: 0;
+    background-color: #D40A1A;
+    font-size: 0.750em;
+    color: white;
+    text-align: center;
+}
+
+.rostercolorimage22:hover,
+.rostercolorimage22:hover ~ .row2image22text {
+    opacity: .9;
+    transition: all 0.9s ease;
+} 
+
+/****** S E C T I O N 3 ******/
+
+.container3 {
+  margin: 0px auto;
+  font-family: Helvetica, sans-serif;
+  background-size: 100%;
+  position: relative;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.articlecontainer {
+    background-color: blue;
+    width: 100%;
+/*    margin-left: 150px;
+    margin-right: 150px;*/
+}
+
+/****** M E D I A   S E C T I O N ******/
+
+.container3 nav {
+    background-color: black;
+    width: 100%;
+}
+
+.container3 nav ul {
+    margin-left: 600px;
+}
+
+.container3 nav li {
+    list-style: square;
+    font-size: 2.250em;
+    color: white;
+}
+
+.container3 nav a {
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 50px;
+}
+
+.container3 li:hover {
+    color: #D40A1A;
+    transition: color 0.5s ease;
+}
+
+.containerimage3 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    z-index: -50;
+}
+
+.show img {
+    position: absolute;
+    left: 300px;
+}
+
+article img {
+    margin: 50px 0px 50px 120px;
+    border-width: 10px;
+    border-style: double;
+    border-color: white;
+}
+
+.imagecontent {
+    color: white;
+    position: absolute;
+    width: 400px;
+    top: 50px;
+    left: 850px;
+    line-height: 1.5;
+}
+
+.imagecontent h2 {
+    color: #D40A1A;
+    font-style: bold;
+}
+
+.imagecontent p {
+    font-size: 0.875em;
+}
+
+
+/****** C O N T A I N E R  4 ******/
+
+h3 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/****** F O O T E R ******/
+
+footer h5 {
+    color: black;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+ .hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+ .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+ .visuallyhidden.focusable:active,
+ .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+ .invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+ .clearfix:before,
+ .clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 1400px) and (max-width: 1824px) {
+    html { font-size: 1em; }
+
+    .container1 h1 {
+        font-size: 150px;
+        color: red;
+        padding-left: 50px;
+    }
+
+/*    .champions .rostercontainer_row1 {
+        margin-left: 0px;
+    }
+*/
+
+}
+
+
+@media only screen and (max-width: 1299px) {
+    html { font-size: 1em; }
+
+    .container1 h1 {
+        font-size: 100px;
+        color: blue;
+        padding-left: 50px;
+        line-height: 1;
+    }
+
+    .champions, .rostercontainer_row1, .rostercontainer_row2 {
+        margin-left: 50px;
+    }
+
+    .tagteamcontainer {
+        margin-left: 10px;
+    }
+
+.row1image1text {
+    left: 150px;
+}
+
+.rostercolorimage2 {
+    position: absolute;
+    left: 150px;
+    opacity: 0;
+}
+
+.row1image2text {
+    left: 250px;
+}
+
+.rostercolorimage3 {
+    position: absolute;
+    left: 250px;
+    opacity: 0;
+}
+
+.row1image3text {
+    left: 350px;
+}
+
+.rostercolorimage4 {
+    position: absolute;
+    left: 350px;
+    opacity: 0;
+}
+
+.row1image4text {
+    left: 450px;
+}
+
+.rostercolorimage5 {
+    position: absolute;
+    left: 450px;
+    opacity: 0;
+}
+
+.row1image5text {
+    left: 550px;
+}
+
+.rostercolorimage6 {
+    position: absolute;
+    left: 550px;
+    opacity: 0;
+}
+
+.row1image6text {
+    left: 650px;
+}
+
+.rostercolorimage7 {
+    position: absolute;
+    left: 650px;
+    opacity: 0;
+}
+
+.row1image7text {
+    left: 750px;
+}
+
+.rostercolorimage8 {
+    position: absolute;
+    left: 750px;
+    opacity: 0;
+}
+
+.row1image8text {
+    left: 850px;
+}
+
+.rostercolorimage9 {
+    position: absolute;
+    left: 850px;
+    opacity: 0;
+}
+
+.row1image9text {
+    left: 950px;
+}
+
+.rostercolorimage10 {
+    position: absolute;
+    left: 950px;
+    opacity: 0;
+}
+
+.row1image10text {
+    left: 750px;
+}
+
+.rostercolorimage11 {
+    position: absolute;
+    left: 1050px;
+    opacity: 0;
+}
+
+.row1image11text {
+    left: 850px;
+}
+
+.row2image12text {
+    left: 150px;
+}
+
+.rostercolorimage13 {
+    position: absolute;
+    left: 150px;
+    opacity: 0;
+}
+
+.row2image13text {
+    left: 250px;
+}
+
+.rostercolorimage14 {
+    position: absolute;
+    left: 250px;
+    opacity: 0;
+}
+
+.row2image14text {
+    left: 350px;
+}
+
+.rostercolorimage15 {
+    position: absolute;
+    left: 350px;
+    opacity: 0;
+}
+
+.row2image15text {
+    left: 450px;
+}
+
+.rostercolorimage16 {
+    position: absolute;
+    left: 450px;
+    opacity: 0;
+}
+
+.row2image16text {
+    left: 550px;
+}
+
+.rostercolorimage17 {
+    position: absolute;
+    left: 550px;
+    opacity: 0;
+}
+
+.row2image17text {
+    left: 650px;
+}
+
+.rostercolorimage18 {
+    position: absolute;
+    left: 650px;
+    opacity: 0;
+}
+
+.row2image18text {
+    left: 750px;
+}
+
+.rostercolorimage19 {
+    position: absolute;
+    left: 750px;
+    opacity: 0;
+}
+
+.row2image19text {
+    left: 850px;
+}
+
+.rostercolorimage20 {
+    position: absolute;
+    left: 850px;
+    opacity: 0;
+}
+
+.row2image20text {
+    left: 950px;
+}
+
+.rostercolorimage21 {
+    position: absolute;
+    left: 950px;
+    opacity: 0;
+}
+
+.row2image21text {
+    left: 750px;
+}
+
+.rostercolorimage22 {
+    position: absolute;
+    left: 1050px;
+    opacity: 0;
+}
+
+.row2image22text {
+    left: 850px;
+}
+
+    .container3 nav ul {
+        margin-left: 575px;
+}
+
+    article img {
+        margin: 50px 0px 50px 100px;
+        border-width: 10px;
+        border-style: double;
+        border-color: white;
+        width: 50%;
+}
+
+    .imagecontent {
+        left: 775px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1150px) {
+    html { font-size: 1em; }
+
+    .container1 h1 {
+        font-size: 120px;
+        color: blue;
+        padding-left: 50px;
+        line-height: 1;
+    }
+
+    .champions {
+        margin-left: 200px;
+        margin-top: 0px;
+    }
+
+    .rostercontainer_row1, .rostercontainer_row2 {
+        display: none;
+    }
+
+    .worldchampioncontainer {
+        margin-top: 0px;
+    }
+
+    .tagteamcontainer {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .container3 nav ul {
+        margin-left: 475px;
+}
+
+    article img {
+        margin: 50px 0px 50px 50px;
+        border-width: 10px;
+        border-style: double;
+        border-color: white;
+}
+
+    .imagecontent {
+        left: 700px;;
+        width: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    html { font-size: 1em; }
+
+    .container1 h1 {
+        font-size: 80px;
+        color: green;
+        padding-left: 50px;
+        line-height: 1.25;
+    }
+
+    .champions {
+        margin-left: 150px;
+        margin-top: 0px;
+    }
+
+    .worldchampioncontainer {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .tagteamcontainer {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .rostercontainer_row1, .rostercontainer_row2 {
+        display: none;
+    }
+
+    .container3 nav ul {
+        margin-left: 300px;
+}
+
+    article img {
+        margin: 50px 0px 50px 25px;
+        border-width: 10px;
+        border-style: double;
+        border-color: white;
+        width: 90%;
+}
+
+    .imagecontent {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    html { font-size: 1em; }
+
+    .container1 h1 {
+        font-size: 50px;
+        color: orange;
+        padding-left: 50px;
+        line-height: 1.25;
+        visibility: hidden;    
+    }
+
+    .champions {
+        margin-left: 50px;
+    }
+
+/*    .containerimage2 img {
+        display: none;
+    }*/
+
+    .worldchampioncontainer {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .tagteamcontainer {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .rostercontainer_row1, .rostercontainer_row2 {
+        display: none;
+    }
+
+    .container3 nav ul {
+        margin-left: 200px;
+}
+
+    article img {
+        margin: 50px 0px 50px 20px;
+        border-width: 10px;
+        border-style: double;
+        border-color: white;
+        width: 90%;
+}
+
+    .imagecontent {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    html { font-size: 1em; }
+
+    .container1 h1 {
+        font-size: 50px;
+        color: orange;
+        padding-left: 50px;
+        line-height: 1.25;
+        visibility: hidden;    
+    }
+
+    .champions {
+        margin-left: 0px;
+    }
+
+/*    .containerimage2 img {
+        display: none;
+    }*/
+
+    .worldchampioncontainer {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .tagteamcontainer {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .rostercontainer_row1, .rostercontainer_row2 {
+        display: none;
+    }
+
+    .container3 nav ul {
+        margin-left: 100px;
+}
+
+    article img {
+        margin: 50px 0px 50px 15px;
+        border-width: 5px;
+        border-style: double;
+        border-color: white;
+        width: 90%;
+}
+
+    .imagecontent {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    html { font-size: 1em; }
+
+    .container1 h1 {
+        font-size: 50px;
+        color: orange;
+        padding-left: 50px;
+        line-height: 1.25;
+        visibility: hidden;    
+    }
+
+    .champions {
+        margin-left: 0px;
+    }
+
+/*    .containerimage2 img {
+        display: none;
+    }*/
+
+    .worldchampioncontainer {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .tagteamcontainer {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .rostercontainer_row1, .rostercontainer_row2 {
+        display: none;
+    }
+
+    .container3 nav ul {
+        margin-left: 100px;
+}
+
+}
+
+/*@media only screen and (min-width: 900px) and (max-width: 1149px) {
+    html { font-size: 1em; }
+
+    .container1 h1 {
+        font-size: 100px;
+        color: yellow;
+        padding-left: 50px;
+        line-height: 1.25;
+    }
+
+    .champions, .rostercontainer_row1, .rostercontainer_row2 {
+        margin-left: 0px;
+    }
+
+    .tagteamcontainer {
+        margin-left: 0px;
+    }
+
+}*/
+
+/*@media only screen and (min-width: 980px) and (max-width: 1274px) {
+    .container1 h1 {
+        font-size: 60px;
+        visibility: hidden;*/
+/*        color: black;
+        padding-left: 50px;
+        line-height: 1;*/
+/*    }*/
+
+/*    .champions{
+        padding-left: 40px;
+    }
+
+    .tagteamcontainer {
+        margin: 0px;
+    }*/
+
+/*}*/
+
+/*@media only screen and (max-width: 670px) {
+    .container1 h1 {
+        font-size: 40px;
+        visibility: hidden;
+    }
+}*/
+
+/*    .header img {
+        visibility: hidden;
+    }
+
+    nav ul {
+        height: 0;
+        overflow: hidden;
+        transition: all 300ms ease-in-out;
+        clear: both;
+    }
+
+    .open {
+      height: 334px;
+  }
+
+  nav {
+    float: none;
+    padding: 0px;
+}
+
+nav a {
+    padding: 10px 25px;
+}
+
+nav li {
+    float: none;
+    text-align: left;
+    display: block; 
+    border-bottom: 1px solid gray;
+}
+
+.hamburger {
+    display: block;
+    margin-top: 0px;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+.worldchampioncontainer {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin: 0px auto;
+    height: 270px;
+    width: 100%;
+    background-color: black;
+    box-shadow: 0px 0px 3px black;
+    overflow: hidden;
+}
+
+.worldchampioncontainer h3 {
+    font-size: 40px;
+}
+
+.worldchampioncontainer h4 {
+    font-size: 10px;
+    left: 200px;
+}
+
+.worldchampioninfo {
+    visibility: hidden;
+}
+
+.worldchampionbgimg img {
+    visibility: hidden;
+}
+
+.champions {
+    padding-left: 0px;
+    margin: 0px auto;
+}
+
+.tagteamcontainer {
+    margin: 0px;*/
+/*}*/
+
+/*@media only screen and (max-width: 790px) {
+
+  .container1 h1 {
+    font-size: 0px;
+  }
+  }
+
+/*@media only screen and (max-width: 500px) {
+
+  .container1 h1 {
+    font-size: 0px;
+  }
+  }*/
+
+/*@media only screen and (max-width: 1000px) {
+  body {
+    font-size: 15px;
+  }
+  }*/
+
+
+  /* iPads (portrait and landscape) ----------- */
+/*  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px) {*/
+    /* STYLES GO HERE */
+    /*}*/
+
+/*@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {*/
+    /* Style adjustments for high resolution devices */
+    /*}*/
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+/*     a[href^="#"]:after,
+     a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+        }*/
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+/*     thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+        }*/
