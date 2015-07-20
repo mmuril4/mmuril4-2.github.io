@@ -108,6 +108,7 @@
 
    body {
     font-family: sans-serif;
+    font-size: 16px;
 }
 
 nav {
@@ -202,7 +203,6 @@ form textarea {
   z-index: 3000;
   visibility: hidden;
   opacity: 0;
-  filter: alpha(opacity=0);
   -webkit-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
@@ -226,7 +226,6 @@ form textarea {
   z-index: 1000;
   visibility: hidden;
   opacity: 0;
-  filter: alpha(opacity=0);
   background: rgba(0, 0, 0, 0.8);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -234,7 +233,6 @@ form textarea {
 
 .show-modal ~ .overlay-background {
   opacity: 1;
-  filter: alpha(opacity=100);
   visibility: visible;
 }
 
@@ -260,7 +258,7 @@ header {
 h1 {
     font-family: "Molot", sans-serif;
     margin: 0px;
-    font-size: 8.750em;
+    font-size: 9.375em;
     letter-spacing: 2px;
     line-height: 1.5;
     color: white;
@@ -349,7 +347,6 @@ video#bgvid {
     float: left;
     width: 96.5%;
     height: 250px;
-    background-color: ;
     margin-top: 10px;
     margin-left: 10px;
 }
@@ -1294,7 +1291,7 @@ article img {
 
 .imagecontent h2 {
     color: #D40A1A;
-    font-style: bold;
+    font-weight: bold;
 }
 
 .imagecontent p {
@@ -1407,7 +1404,7 @@ footer h5 {
     .container1 h1 {
         font-size: 150px;
         color: white;
-        padding-left: 50px;
+        padding-left: 100px;
     }
 
     .container3 li:hover {
@@ -1423,8 +1420,8 @@ footer h5 {
 
     .container1 h1 {
         font-size: 100px;
-        padding-left: 50px;
-        line-height: 1;
+        padding-left: 100px;
+        line-height: 1.5;
     }
 
     .champions, .rostercontainer_row1, .rostercontainer_row2 {
@@ -1662,8 +1659,8 @@ footer h5 {
     html { font-size: 1em; }
 
     .container1 h1 {
-        font-size: 120px;
-        padding-left: 50px;
+        font-size: 100px;
+        padding-left: 100px;
         line-height: 1;
     }
 
@@ -1858,7 +1855,7 @@ footer h5 {
         font-size: 50px;
         color: orange;
         padding-left: 50px;
-        line-height: 0;
+        line-height: 1;
         visibility: hidden;    
     }
 
