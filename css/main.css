@@ -1219,10 +1219,10 @@ video#bgvid {
 }
 
 .articlecontainer {
-    background-color: blue;
+    /*    background-color: blue;*/
     width: 100%;
 /*    margin-left: 150px;
-    margin-right: 150px;*/
+margin-right: 150px;*/
 }
 
 /****** M E D I A   S E C T I O N ******/
@@ -1254,9 +1254,10 @@ video#bgvid {
 
 .containerimage3 img {
     position: absolute;
+    margin: 0px auto;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 125%;
     height: auto;
     background-size: cover;
     background-position: center center;
@@ -1393,19 +1394,14 @@ footer h5 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 1400px) and (max-width: 1824px) {
+   @media only screen and (min-width: 1400px) and (max-width: 1824px) {
     html { font-size: 1em; }
 
     .container1 h1 {
         font-size: 150px;
-        color: red;
+        color: white;
         padding-left: 50px;
     }
-
-/*    .champions .rostercontainer_row1 {
-        margin-left: 0px;
-    }
-*/
 
 }
 
@@ -1415,7 +1411,6 @@ footer h5 {
 
     .container1 h1 {
         font-size: 100px;
-        color: blue;
         padding-left: 50px;
         line-height: 1;
     }
@@ -1428,615 +1423,515 @@ footer h5 {
         margin-left: 10px;
     }
 
-.row1image1text {
-    left: 150px;
-}
-
-.rostercolorimage2 {
-    position: absolute;
-    left: 150px;
-    opacity: 0;
-}
-
-.row1image2text {
-    left: 250px;
-}
-
-.rostercolorimage3 {
-    position: absolute;
-    left: 250px;
-    opacity: 0;
-}
-
-.row1image3text {
-    left: 350px;
-}
-
-.rostercolorimage4 {
-    position: absolute;
-    left: 350px;
-    opacity: 0;
-}
-
-.row1image4text {
-    left: 450px;
-}
-
-.rostercolorimage5 {
-    position: absolute;
-    left: 450px;
-    opacity: 0;
-}
-
-.row1image5text {
-    left: 550px;
-}
-
-.rostercolorimage6 {
-    position: absolute;
-    left: 550px;
-    opacity: 0;
-}
-
-.row1image6text {
-    left: 650px;
-}
-
-.rostercolorimage7 {
-    position: absolute;
-    left: 650px;
-    opacity: 0;
-}
-
-.row1image7text {
-    left: 750px;
-}
-
-.rostercolorimage8 {
-    position: absolute;
-    left: 750px;
-    opacity: 0;
-}
-
-.row1image8text {
-    left: 850px;
-}
-
-.rostercolorimage9 {
-    position: absolute;
-    left: 850px;
-    opacity: 0;
-}
-
-.row1image9text {
-    left: 950px;
-}
-
-.rostercolorimage10 {
-    position: absolute;
-    left: 950px;
-    opacity: 0;
-}
-
-.row1image10text {
-    left: 750px;
-}
-
-.rostercolorimage11 {
-    position: absolute;
-    left: 1050px;
-    opacity: 0;
-}
-
-.row1image11text {
-    left: 850px;
-}
-
-.row2image12text {
-    left: 150px;
-}
-
-.rostercolorimage13 {
-    position: absolute;
-    left: 150px;
-    opacity: 0;
-}
-
-.row2image13text {
-    left: 250px;
-}
-
-.rostercolorimage14 {
-    position: absolute;
-    left: 250px;
-    opacity: 0;
-}
-
-.row2image14text {
-    left: 350px;
-}
-
-.rostercolorimage15 {
-    position: absolute;
-    left: 350px;
-    opacity: 0;
-}
-
-.row2image15text {
-    left: 450px;
-}
-
-.rostercolorimage16 {
-    position: absolute;
-    left: 450px;
-    opacity: 0;
-}
-
-.row2image16text {
-    left: 550px;
-}
-
-.rostercolorimage17 {
-    position: absolute;
-    left: 550px;
-    opacity: 0;
-}
-
-.row2image17text {
-    left: 650px;
-}
-
-.rostercolorimage18 {
-    position: absolute;
-    left: 650px;
-    opacity: 0;
-}
-
-.row2image18text {
-    left: 750px;
-}
-
-.rostercolorimage19 {
-    position: absolute;
-    left: 750px;
-    opacity: 0;
-}
-
-.row2image19text {
-    left: 850px;
-}
-
-.rostercolorimage20 {
-    position: absolute;
-    left: 850px;
-    opacity: 0;
-}
-
-.row2image20text {
-    left: 950px;
-}
-
-.rostercolorimage21 {
-    position: absolute;
-    left: 950px;
-    opacity: 0;
-}
-
-.row2image21text {
-    left: 750px;
-}
-
-.rostercolorimage22 {
-    position: absolute;
-    left: 1050px;
-    opacity: 0;
-}
-
-.row2image22text {
-    left: 850px;
-}
-
-    .container3 nav ul {
-        margin-left: 575px;
-}
-
-    article img {
-        margin: 50px 0px 50px 100px;
-        border-width: 10px;
-        border-style: double;
-        border-color: white;
-        width: 50%;
-}
-
-    .imagecontent {
-        left: 775px;
+    .row1image1text {
+        left: 150px;
     }
 
+    .rostercolorimage2 {
+        position: absolute;
+        left: 150px;
+        opacity: 0;
+    }
+
+    .row1image2text {
+        left: 250px;
+    }
+
+    .rostercolorimage3 {
+        position: absolute;
+        left: 250px;
+        opacity: 0;
+    }
+
+    .row1image3text {
+        left: 350px;
+    }
+
+    .rostercolorimage4 {
+        position: absolute;
+        left: 350px;
+        opacity: 0;
+    }
+
+    .row1image4text {
+        left: 450px;
+    }
+
+    .rostercolorimage5 {
+        position: absolute;
+        left: 450px;
+        opacity: 0;
+    }
+
+    .row1image5text {
+        left: 550px;
+    }
+
+    .rostercolorimage6 {
+        position: absolute;
+        left: 550px;
+        opacity: 0;
+    }
+
+    .row1image6text {
+        left: 650px;
+    }
+
+    .rostercolorimage7 {
+        position: absolute;
+        left: 650px;
+        opacity: 0;
+    }
+
+    .row1image7text {
+        left: 750px;
+    }
+
+    .rostercolorimage8 {
+        position: absolute;
+        left: 750px;
+        opacity: 0;
+    }
+
+    .row1image8text {
+        left: 850px;
+    }
+
+    .rostercolorimage9 {
+        position: absolute;
+        left: 850px;
+        opacity: 0;
+    }
+
+    .row1image9text {
+        left: 950px;
+    }
+
+    .rostercolorimage10 {
+        position: absolute;
+        left: 950px;
+        opacity: 0;
+    }
+
+    .row1image10text {
+        left: 750px;
+    }
+
+    .rostercolorimage11 {
+        position: absolute;
+        left: 1050px;
+        opacity: 0;
+    }
+
+    .row1image11text {
+        left: 850px;
+    }
+
+    .row2image12text {
+        left: 150px;
+    }
+
+    .rostercolorimage13 {
+        position: absolute;
+        left: 150px;
+        opacity: 0;
+    }
+
+    .row2image13text {
+        left: 250px;
+    }
+
+    .rostercolorimage14 {
+        position: absolute;
+        left: 250px;
+        opacity: 0;
+    }
+
+    .row2image14text {
+        left: 350px;
+    }
+
+    .rostercolorimage15 {
+        position: absolute;
+        left: 350px;
+        opacity: 0;
+    }
+
+    .row2image15text {
+        left: 450px;
+    }
+
+    .rostercolorimage16 {
+        position: absolute;
+        left: 450px;
+        opacity: 0;
+    }
+
+    .row2image16text {
+        left: 550px;
+    }
+
+    .rostercolorimage17 {
+        position: absolute;
+        left: 550px;
+        opacity: 0;
+    }
+
+    .row2image17text {
+        left: 650px;
+    }
+
+    .rostercolorimage18 {
+        position: absolute;
+        left: 650px;
+        opacity: 0;
+    }
+
+    .row2image18text {
+        left: 750px;
+    }
+
+    .rostercolorimage19 {
+        position: absolute;
+        left: 750px;
+        opacity: 0;
+    }
+
+    .row2image19text {
+        left: 850px;
+    }
+
+    .rostercolorimage20 {
+        position: absolute;
+        left: 850px;
+        opacity: 0;
+    }
+
+    .row2image20text {
+        left: 950px;
+    }
+
+    .rostercolorimage21 {
+        position: absolute;
+        left: 950px;
+        opacity: 0;
+    }
+
+    .row2image21text {
+        left: 750px;
+    }
+
+    .rostercolorimage22 {
+        position: absolute;
+        left: 1050px;
+        opacity: 0;
+    }
+
+    .row2image22text {
+        left: 850px;
+    }
+
+        article img {
+            margin: 50px 0px 50px 100px;
+            border-width: 10px;
+            border-style: double;
+            border-color: white;
+            width: 50%;
+        }
+
+        .imagecontent {
+            left: 775px;
+        }
+
+
+    }
+
+    @media only screen and (max-width: 1150px) {
+        html { font-size: 1em; }
+
+        .container1 h1 {
+            font-size: 120px;
+            padding-left: 50px;
+            line-height: 1;
+        }
+
+        .champions {
+            margin-left: 200px;
+            margin-top: 0px;
+        }
+
+        .rostercontainer_row1, .rostercontainer_row2 {
+            display: none;
+        }
+
+        .worldchampioncontainer {
+            margin-top: 0px;
+        }
+
+        .tagteamcontainer {
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        .container3 nav ul {
+            margin-left: 475px;
+        }
+
+        article img {
+            margin: 50px 0px 50px 50px;
+            border-width: 10px;
+            border-style: double;
+            border-color: white;
+        }
+
+        .imagecontent {
+            left: 700px;;
+            width: 300px;
+        }
+
+    }
+
+    @media only screen and (max-width: 850px) {
+        html { font-size: 1em; }
+
+        .container1 h1 {
+            font-size: 80px;
+            padding-left: 50px;
+            line-height: 1.25;
+        }
+
+        .champions {
+            margin-left: 150px;
+            margin-top: 0px;
+        }
+
+        .worldchampioncontainer {
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        .tagteamcontainer {
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+
+        .rostercontainer_row1, .rostercontainer_row2 {
+            display: none;
+        }
+
+        .container3 nav ul {
+            margin-left: 300px;
+        }
+
+        article img {
+            margin: 50px 0px 50px 25px;
+            border-width: 10px;
+            border-style: double;
+            border-color: white;
+            width: 90%;
+        }
+
+        .imagecontent {
+            display: none;
+        }
+
+
+    }
+
+    @media only screen and (max-width: 768px) {
+        html { font-size: 1em; }
+
+        .container1 h1 {
+            font-size: 50px;
+            color: orange;
+            padding-left: 50px;
+            line-height: 1.25;
+            visibility: hidden;    
+        }
+
+        .champions {
+            margin-left: 50px;
+        }
+
+        .worldchampioncontainer {
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        .tagteamcontainer {
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+
+        .rostercontainer_row1, .rostercontainer_row2 {
+            display: none;
+        }
+
+        .container3 nav ul {
+            margin-left: 200px;
+        }
+
+        article img {
+            margin: 50px 0px 50px 20px;
+            border-width: 10px;
+            border-style: double;
+            border-color: white;
+            width: 90%;
+        }
+
+        .imagecontent {
+            display: none;
+        }
+
+    }
+
+    @media only screen and (max-width: 600px) {
+        html { font-size: 1em; }
+
+        .container1 h1 {
+            font-size: 50px;
+            color: orange;
+            padding-left: 50px;
+            line-height: 1.25;
+            visibility: hidden;    
+        }
+
+        .champions {
+            margin-left: 0px;
+        }
+
+        .worldchampioncontainer {
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        .tagteamcontainer {
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+
+        .rostercontainer_row1, .rostercontainer_row2 {
+            display: none;
+        }
+
+        .container3 nav ul {
+            margin-left: 100px;
+        }
+
+        article img {
+            margin: 50px 0px 25px 15px;
+            border-width: 5px;
+            border-style: double;
+            border-color: white;
+            width: 90%;
+        }
+
+        .imagecontent {
+            display: none;
+        }
+
+    }
+
+    @media only screen and (max-width: 400px) {
+        html { font-size: 1em; }
+
+        .container1 h1 {
+            font-size: 50px;
+            color: orange;
+            padding-left: 50px;
+            line-height: 1;
+            visibility: hidden;    
+        }
+
+        .champions {
+            margin-left: 0px;
+        }
+
+        .worldchampioncontainer {
+            margin-top: 0px;
+            margin-left: 0px;
+            width: 400px;
+        }
+
+        .worldchampioncontainer h3 {
+            font-size: 1.625em;
+            font-weight: bold;
+            left: 170px;
+            top: 90px;
+            margin: 0px;
+        }
+
+        .worldchampioncontainer h4 {
+            color: white;
+            font-size: 1em;
+            left: 180px;
+            top: 70px;
+        }
+
+        .worldchampioninfo {
+            display: none;
+        }
+
+        .worldchampionbgimg img {
+            width: 95%;
+            height: 250px;
+        }
+
+        .tagteamcontainer {
+            width: 400px;
+        }
+
+        .tagteamtitle h3 {
+            font-size: 1.5em;
+            font-weight: bold;
+            left: 20px;
+            top: 90px;
+            margin: 0px;
+        }
+
+        .tagteamcontainer h4 {
+            color: white;
+            font-size: .775em;
+            left: 20px;
+            top: 70px;
+        }
+
+        .tagteaminfoAE, .tagteaminfoTL  {
+           display: none;
+       }
+
+       .tagteamchampions img {
+            left: 200px;
+        }
+
+        .tagteamchampionbgimg img {
+            width: 95%;
+        }
+
+        #champ2 {
+            left: 130px;
+        }
+
+        .rostercontainer_row1, .rostercontainer_row2 {
+            display: none;
+        }
+
+        .container3 nav ul {
+            margin-left: 100px;
+        }
+
+        article img {
+            margin: 50px 0px 10px 15px;
+            border-width: 5px;
+            border-style: double;
+            border-color: white;
+            width: 90%;
+        }
 
 }
 
-@media only screen and (max-width: 1150px) {
-    html { font-size: 1em; }
 
-    .container1 h1 {
-        font-size: 120px;
-        color: blue;
-        padding-left: 50px;
-        line-height: 1;
-    }
-
-    .champions {
-        margin-left: 200px;
-        margin-top: 0px;
-    }
-
-    .rostercontainer_row1, .rostercontainer_row2 {
-        display: none;
-    }
-
-    .worldchampioncontainer {
-        margin-top: 0px;
-    }
-
-    .tagteamcontainer {
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-
-    .container3 nav ul {
-        margin-left: 475px;
-}
-
-    article img {
-        margin: 50px 0px 50px 50px;
-        border-width: 10px;
-        border-style: double;
-        border-color: white;
-}
-
-    .imagecontent {
-        left: 700px;;
-        width: 300px;
-    }
-
-}
-
-@media only screen and (max-width: 850px) {
-    html { font-size: 1em; }
-
-    .container1 h1 {
-        font-size: 80px;
-        color: green;
-        padding-left: 50px;
-        line-height: 1.25;
-    }
-
-    .champions {
-        margin-left: 150px;
-        margin-top: 0px;
-    }
-
-    .worldchampioncontainer {
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-
-    .tagteamcontainer {
-        margin-left: 0px;
-        margin-top: 0px;
-    }
-
-    .rostercontainer_row1, .rostercontainer_row2 {
-        display: none;
-    }
-
-    .container3 nav ul {
-        margin-left: 300px;
-}
-
-    article img {
-        margin: 50px 0px 50px 25px;
-        border-width: 10px;
-        border-style: double;
-        border-color: white;
-        width: 90%;
-}
-
-    .imagecontent {
-        display: none;
-    }
-
-
-}
-
-@media only screen and (max-width: 768px) {
-    html { font-size: 1em; }
-
-    .container1 h1 {
-        font-size: 50px;
-        color: orange;
-        padding-left: 50px;
-        line-height: 1.25;
-        visibility: hidden;    
-    }
-
-    .champions {
-        margin-left: 50px;
-    }
-
-/*    .containerimage2 img {
-        display: none;
-    }*/
-
-    .worldchampioncontainer {
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-
-    .tagteamcontainer {
-        margin-left: 0px;
-        margin-top: 0px;
-    }
-
-    .rostercontainer_row1, .rostercontainer_row2 {
-        display: none;
-    }
-
-    .container3 nav ul {
-        margin-left: 200px;
-}
-
-    article img {
-        margin: 50px 0px 50px 20px;
-        border-width: 10px;
-        border-style: double;
-        border-color: white;
-        width: 90%;
-}
-
-    .imagecontent {
-        display: none;
-    }
-
-}
-
-@media only screen and (max-width: 600px) {
-    html { font-size: 1em; }
-
-    .container1 h1 {
-        font-size: 50px;
-        color: orange;
-        padding-left: 50px;
-        line-height: 1.25;
-        visibility: hidden;    
-    }
-
-    .champions {
-        margin-left: 0px;
-    }
-
-/*    .containerimage2 img {
-        display: none;
-    }*/
-
-    .worldchampioncontainer {
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-
-    .tagteamcontainer {
-        margin-left: 0px;
-        margin-top: 0px;
-    }
-
-    .rostercontainer_row1, .rostercontainer_row2 {
-        display: none;
-    }
-
-    .container3 nav ul {
-        margin-left: 100px;
-}
-
-    article img {
-        margin: 50px 0px 50px 15px;
-        border-width: 5px;
-        border-style: double;
-        border-color: white;
-        width: 90%;
-}
-
-    .imagecontent {
-        display: none;
-    }
-
-}
-
-@media only screen and (max-width: 400px) {
-    html { font-size: 1em; }
-
-    .container1 h1 {
-        font-size: 50px;
-        color: orange;
-        padding-left: 50px;
-        line-height: 1.25;
-        visibility: hidden;    
-    }
-
-    .champions {
-        margin-left: 0px;
-    }
-
-/*    .containerimage2 img {
-        display: none;
-    }*/
-
-    .worldchampioncontainer {
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-
-    .tagteamcontainer {
-        margin-left: 0px;
-        margin-top: 0px;
-    }
-
-    .rostercontainer_row1, .rostercontainer_row2 {
-        display: none;
-    }
-
-    .container3 nav ul {
-        margin-left: 100px;
-}
-
-}
-
-/*@media only screen and (min-width: 900px) and (max-width: 1149px) {
-    html { font-size: 1em; }
-
-    .container1 h1 {
-        font-size: 100px;
-        color: yellow;
-        padding-left: 50px;
-        line-height: 1.25;
-    }
-
-    .champions, .rostercontainer_row1, .rostercontainer_row2 {
-        margin-left: 0px;
-    }
-
-    .tagteamcontainer {
-        margin-left: 0px;
-    }
-
-}*/
-
-/*@media only screen and (min-width: 980px) and (max-width: 1274px) {
-    .container1 h1 {
-        font-size: 60px;
-        visibility: hidden;*/
-/*        color: black;
-        padding-left: 50px;
-        line-height: 1;*/
-/*    }*/
-
-/*    .champions{
-        padding-left: 40px;
-    }
-
-    .tagteamcontainer {
-        margin: 0px;
-    }*/
-
-/*}*/
-
-/*@media only screen and (max-width: 670px) {
-    .container1 h1 {
-        font-size: 40px;
-        visibility: hidden;
-    }
-}*/
-
-/*    .header img {
-        visibility: hidden;
-    }
-
-    nav ul {
-        height: 0;
-        overflow: hidden;
-        transition: all 300ms ease-in-out;
-        clear: both;
-    }
-
-    .open {
-      height: 334px;
-  }
-
-  nav {
-    float: none;
-    padding: 0px;
-}
-
-nav a {
-    padding: 10px 25px;
-}
-
-nav li {
-    float: none;
-    text-align: left;
-    display: block; 
-    border-bottom: 1px solid gray;
-}
-
-.hamburger {
-    display: block;
-    margin-top: 0px;
-    position: absolute;
-    top: 5px;
-    right: 20px;
-    font-size: 14px;
-    color: white;
-}
-
-.worldchampioncontainer {
-    position: relative;
-    display: inline-block;
-    float: left;
-    margin: 0px auto;
-    height: 270px;
-    width: 100%;
-    background-color: black;
-    box-shadow: 0px 0px 3px black;
-    overflow: hidden;
-}
-
-.worldchampioncontainer h3 {
-    font-size: 40px;
-}
-
-.worldchampioncontainer h4 {
-    font-size: 10px;
-    left: 200px;
-}
-
-.worldchampioninfo {
-    visibility: hidden;
-}
-
-.worldchampionbgimg img {
-    visibility: hidden;
-}
-
-.champions {
-    padding-left: 0px;
-    margin: 0px auto;
-}
-
-.tagteamcontainer {
-    margin: 0px;*/
-/*}*/
-
-/*@media only screen and (max-width: 790px) {
-
-  .container1 h1 {
-    font-size: 0px;
-  }
-  }
-
-/*@media only screen and (max-width: 500px) {
-
-  .container1 h1 {
-    font-size: 0px;
-  }
-  }*/
-
-/*@media only screen and (max-width: 1000px) {
-  body {
-    font-size: 15px;
-  }
-  }*/
-
-
-  /* iPads (portrait and landscape) ----------- */
+/* iPads (portrait and landscape) ----------- */
 /*  @media only screen
   and (min-device-width : 768px)
   and (max-device-width : 1024px) {*/
