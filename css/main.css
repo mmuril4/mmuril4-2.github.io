@@ -299,7 +299,7 @@ video#bgvid {
   position: relative;
   top: 0px;
   height: 100%;
-  max-width: 125%;
+  max-width: 100%;
   overflow: hidden;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -309,7 +309,7 @@ video#bgvid {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 150%;
     height: auto;
     background-size: cover;
     background-position: center center;
