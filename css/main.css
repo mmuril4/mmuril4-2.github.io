@@ -243,7 +243,7 @@ header {
     top: 0px;
     width: 100%;
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.1);  
+    background-color: rgba(0, 0, 0, 0.3);  
     margin-top: 0px;
     z-index: 5;
 }
@@ -1410,6 +1410,11 @@ footer h5 {
         padding-left: 50px;
     }
 
+    .container3 li:hover {
+    color: #D40A1A;
+    transition: color 0.5s ease;
+}
+
 }
 
 
@@ -1774,10 +1779,6 @@ footer h5 {
             display: none;
         }
 
-        .container3 nav ul {
-            margin-left: 200px;
-        }
-
         article img {
             margin: 50px 0px 50px 20px;
             border-width: 10px;
@@ -1790,27 +1791,23 @@ footer h5 {
             display: none;
         }
 
-          nav ul {
+          header nav ul {
             height: 0;
             overflow: hidden;
             transition: all 300ms ease-in-out;
             clear: both;
           }
 
-          .open {
-              height: 334px;
-          }
-
-          nav {
+          header nav {
             float: none;
             padding: 0px;
           }
 
-          nav a {
+          header nav a {
             padding: 10px 25px;
           }
 
-          nav li {
+          header nav li {
             float: none;
             text-align: left;
             display: block; 
@@ -1825,6 +1822,11 @@ footer h5 {
             right: 20px;
             font-size: 14px;
             color: white;
+        }
+
+        .open {
+            height: 200px;
+            background-color: black;
         }
 
         .modal h3 {
@@ -1842,6 +1844,10 @@ footer h5 {
         margin-right: 5%;
         }
 
+        .container3 nav ul {
+            margin-left: 200px;
+        }
+
 
     }
 
@@ -1852,7 +1858,7 @@ footer h5 {
             font-size: 50px;
             color: orange;
             padding-left: 50px;
-            line-height: 1.25;
+            line-height: 0;
             visibility: hidden;    
         }
 
@@ -1874,10 +1880,6 @@ footer h5 {
             display: none;
         }
 
-        .container3 nav ul {
-            margin-left: 100px;
-        }
-
         article img {
             margin: 50px 0px 25px 15px;
             border-width: 5px;
@@ -1890,16 +1892,27 @@ footer h5 {
             display: none;
         }
 
-        nav {
+        header nav ul {
+            height: 0;
+            overflow: hidden;
+            transition: all 300ms ease-in-out;
+            clear: both;
+          }
+
+          .open {
+              height: 200px;
+        }
+
+        header nav {
         float: none;
         padding: 0px;
         }
 
-        nav a {
+        header nav a {
         padding: 10px 15px;
         }
 
-        nav li {
+        header nav li {
         float: none;
         text-align: left;
         display: block; 
@@ -1929,6 +1942,10 @@ footer h5 {
 
         .column:first-of-type {
         margin-right: 5%;
+        }
+
+        .container3 nav ul {
+            margin-left: 150px;
         }
 
 
@@ -2030,21 +2047,32 @@ footer h5 {
             width: 90%;
         }
 
-          nav {
-            float: none;
-            padding: 0px;
+        header nav ul {
+            height: 0;
+            overflow: hidden;
+            transition: all 300ms ease-in-out;
+            clear: both;
           }
 
-          nav a {
-            padding: 10px 10px;
-          }
+          .open {
+              height: 200px;
+        }
 
-          nav li {
-            float: none;
-            text-align: left;
-            display: block; 
-            border-bottom: 1px solid gray;
-          }
+        header nav {
+        float: none;
+        padding: 0px;
+        }
+
+        header nav a {
+        padding: 10px 15px;
+        }
+
+        header nav li {
+        float: none;
+        text-align: left;
+        display: block; 
+        border-bottom: 1px solid gray;
+        }
 
           .hamburger {
             display: block;
@@ -2070,6 +2098,10 @@ footer h5 {
             .column:first-of-type {
                 margin-right: 5%;
             }
+
+                .container3 nav ul {
+            margin-left: 90px;
+        }
 
 }
 
