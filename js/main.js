@@ -26,7 +26,7 @@ $(".panel").hide();
 // Fade in the first article
 $(".panel").first().show();
 
-$(".container3 li").on("click", function () {
+$(".imagenav li").on("click", function () {
 	// Remove active class from all li's
 	$("li").removeClass("active");
 	// Fade out all articles
@@ -54,21 +54,3 @@ $('.icon-cross').on('click', function () {
 
 // Find out the distance from the top of the .main-nav to the top of the page
 var stickyNavTop = $('header').offset().top;
-
-
-// // When the user scrolls
-// $(window).on('scroll', function() {
-// 	var scrollTop = $(window).scrollTop();
-
-// 	// If the distance from the top of the page to where the user has scrolled is >= the distance from the stickyNavTop
-//   if( scrollTop >= stickyNavTop ) {
-
-//   	// Add the class 'scrolled' to fix the nav to the top
-//     $('header').addClass('scrolled');
-
-//   // Otherwise
-//   } else {
-//   	// Remove the class 'scrolled' from the .main-nav
-//     $('header').removeClass('scrolled');
-//   }
-// });
