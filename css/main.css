@@ -290,6 +290,13 @@ video#bgvid {
     height: auto;
 }
 
+.icon-cross {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
 /****** R O S T E R   S E C T I O N ******/
 
 .container2 {
@@ -1678,15 +1685,15 @@ footer h5 {
         }
 
         article img {
-            margin: 50px 0px 50px 50px;
+            margin: 50px 0px 50px 125px;
             border-width: 10px;
             border-style: double;
             border-color: white;
+            width: 70%;
         }
 
         .imagecontent {
-            left: 700px;;
-            width: 300px;
+            display: none;
         }
 
     }
@@ -1783,6 +1790,59 @@ footer h5 {
             display: none;
         }
 
+          nav ul {
+            height: 0;
+            overflow: hidden;
+            transition: all 300ms ease-in-out;
+            clear: both;
+          }
+
+          .open {
+              height: 334px;
+          }
+
+          nav {
+            float: none;
+            padding: 0px;
+          }
+
+          nav a {
+            padding: 10px 25px;
+          }
+
+          nav li {
+            float: none;
+            text-align: left;
+            display: block; 
+            border-bottom: 1px solid gray;
+          }
+
+        .hamburger {
+            display: block;
+            margin-top: 0px;
+            position: absolute;
+            top: 5px;
+            right: 20px;
+            font-size: 14px;
+            color: white;
+        }
+
+        .modal h3 {
+        font-size: 1.50em;
+        letter-spacing: 1px;
+        }
+
+        .column {
+        float: left;
+        width: 90%;
+        margin-bottom: 1em;
+        }
+
+        .column:first-of-type {
+        margin-right: 5%;
+        }
+
+
     }
 
     @media only screen and (max-width: 600px) {
@@ -1829,6 +1889,48 @@ footer h5 {
         .imagecontent {
             display: none;
         }
+
+        nav {
+        float: none;
+        padding: 0px;
+        }
+
+        nav a {
+        padding: 10px 15px;
+        }
+
+        nav li {
+        float: none;
+        text-align: left;
+        display: block; 
+        border-bottom: 1px solid gray;
+        }
+
+        .hamburger {
+        display: block;
+        margin-top: 0px;
+        position: absolute;
+        top: 5px;
+        right: 20px;
+        font-size: 14px;
+        color: white;
+        }
+
+        .modal h3 {
+        font-size: 1.50em;
+        letter-spacing: 1px;
+        }
+
+        .column {
+        float: left;
+        width: 90%;
+        margin-bottom: 1em;
+        }
+
+        .column:first-of-type {
+        margin-right: 5%;
+        }
+
 
     }
 
@@ -1927,6 +2029,47 @@ footer h5 {
             border-color: white;
             width: 90%;
         }
+
+          nav {
+            float: none;
+            padding: 0px;
+          }
+
+          nav a {
+            padding: 10px 10px;
+          }
+
+          nav li {
+            float: none;
+            text-align: left;
+            display: block; 
+            border-bottom: 1px solid gray;
+          }
+
+          .hamburger {
+            display: block;
+            margin-top: 0px;
+            position: absolute;
+            top: 5px;
+            right: 20px;
+            font-size: 14px;
+            color: white;
+          }
+
+            .modal h3 {
+                font-size: 1.50em;
+                letter-spacing: 1px;
+            }
+
+            .column {
+                float: left;
+                width: 90%;
+                margin-bottom: 1em;
+            }
+
+            .column:first-of-type {
+                margin-right: 5%;
+            }
 
 }
 

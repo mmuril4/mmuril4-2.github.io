@@ -6,6 +6,14 @@ $("nav a").on("click", function (event) {
 	 }, 1000);
 });
 
+$(".header a").on("click", function (event) {
+	event.preventDefault();
+	var href = $(this).attr('href');
+	$('html, body').animate({
+	    scrollTop: $(href).offset().top
+	 }, 1000);
+});
+
 // when user clicks on .hamburger
 $('.hamburger').on('click', function () {
 	//slide toggle #menu
@@ -39,7 +47,7 @@ $('.trigger').on('click', function () {
 });
 
 // when the user clicks on the .close-modal button
-$('.close-modal').on('click', function () {
+$('.icon-cross').on('click', function () {
 	// remove the .show-modal class to the .modal
 	$('.modal').removeClass('show-modal');
 });
